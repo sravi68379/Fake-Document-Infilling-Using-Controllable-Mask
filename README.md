@@ -1,3 +1,24 @@
+Project Overview
+This project focuses on creating fake document infilling using controllable masking for cyber deception. By leveraging a trained BERT model, the system generates believable but false alternatives for masked sensitive data, enhancing cybersecurity through data obfuscation.
+
+Key Features
+Random Masking and Training: Performed random masking on sensitive data (e.g., patent data) and trained a BERT model on this masked data.
+Importance Score Calculation: Used the RAKE algorithm to calculate the importance score of new sensitive documents, guiding the masking process.
+Controllable Masking: Applied controllable masking based on the calculated importance scores to strategically mask important concepts.
+Penalization Decoding: Implemented penalization decoding during infilling to ensure the generated words are plausible but false alternatives.
+
+Results
+The generated documents contain believable but false alternatives to the masked sensitive data, providing an effective method for cyber deception.
+
+
+Contact
+For any questions or inquiries, please contact sravi68379@gmail.com.
+
+
+
+
+
+
 Library Required:
 
 import transformers (version==4.40.2)
